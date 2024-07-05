@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Decodificador de texto - ONE</title>
+  <link rel="icon" type="image/x-icon" href="/assets/favicon-blue.ico">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="header">
+    <img class="img-header" src="./assets/favicon-blue.ico" alt="">
+  </header>
+  
+
+  <main class="main">
+    <div class="main-form-box">
+      <section class="form box">
+        <div class="form-box-div">
+          <input class="text-input" type="text" name="input-texto" id="input-texto" placeholder="Digite seu texto">
+        </div>
+
+        <div class="btn-btn">
+          <div class="">
+            <img class="img-span" src="./assets/exclamation-circle.svg" alt="">
+            <span class="span" for="input-texto">Apenas letras minúsculas, sem cento</span>
+          </div>
+          <div class="btn-container">
+            <button class="btn blue" onclick="encriptarTexto()">Criptografar!</button>
+            <button class="btn gray" onclick="decriptarTexto()">Descriptografar!</button>
+          </div>
+        </div>
+      </section>
+      <div class="msg-box">
+        <section class="msg box">
+          <img id="found-blue" src="./assets/no-message-found-blue.svg" alt="">
+          <input class="text-input" type="text" id="msg" name="msg"></input>
+          <button class="btn blue copiar" id="btn-copiar" onclick="copiaTexto()">Copiar</button>
+          <h2 class="msg-h2" id="h2"></h2>
+          <p class="msg-p" id="p"></p>
+        </section>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <ul>
+      <li>© Desenvolvido por Felipe Borges</li>
+      <li>|</li>
+      <li>
+        <a href="https://github.com/felipe-santos-borges" target="_blank"><img src="assets/github-icon.svg"
+            alt="Logo do GitHub"> GitHub</a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/felipe-borges-dsenvolvedor" target="_blank"><img
+            src="assets/linkedin-icon.svg" alt="Logo do LinkedIn"> LinkedIn</a>
+      </li>
+    </ul>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
